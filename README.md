@@ -44,10 +44,11 @@ interfaces Datasheet - production data Features
 
 All the above mentioned LCD display will have 16 Pins and the programming approach is also the same and hence the choice is left to you. 
 Below is the Pinout and Pin Description of 16x2 LCD Module:
+ <img src="https://user-images.githubusercontent.com/36288975/233858086-7b1a88a2-f941-475c-86c2-b3bae68bdf7e.png" width=450 height=450>
 
-![image](https://user-images.githubusercontent.com/36288975/233858086-7b1a88a2-f941-475c-86c2-b3bae68bdf7e.png)
-![image](https://user-images.githubusercontent.com/36288975/233857710-541ac1c2-786c-4dfc-b7b5-e3a4868a9cb6.png)
-![image](https://user-images.githubusercontent.com/36288975/233857733-05df5dbf-1a1e-479e-85bb-8014a39ad878.png)
+ <img src="https://user-images.githubusercontent.com/36288975/233857710-541ac1c2-786c-4dfc-b7b5-e3a4868a9cb6.png" width=450 height=450>
+
+ <img src="https://user-images.githubusercontent.com/36288975/233857733-05df5dbf-1a1e-479e-85bb-8014a39ad878.png" width=450 height=450>
 
 4-bit and 8-bit Mode of LCD:
 
@@ -60,87 +61,50 @@ Whereas in 8 bit mode we can send the 8-bit data directly in one stroke since we
 
 There are some preset commands instructions in LCD, which we need to send to LCD through some microcontroller. Some important command instructions are given below:
 
-Hex Code
+Command to LCD Instruction Register -Hex Code
 
-Command to LCD Instruction Register
+LCD ON, cursor ON -0F
 
-0F
+Clear display screen -01
 
-LCD ON, cursor ON
+Return home-02
 
-01
+Decrement cursor (shift cursor to left) -04
 
-Clear display screen
+Increment cursor (shift cursor to right) -06
 
-02
+Shift display right -05
 
-Return home
+Shift display left -07
 
-04
+Display ON, cursor blinking -0E
 
-Decrement cursor (shift cursor to left)
+Force cursor to beginning of first line -80
 
-06
+Force cursor to beginning of second line -C0
 
-Increment cursor (shift cursor to right)
+2 lines and 5×7 matrix -38
 
-05
+Cursor line 1 position 3 -83
 
-Shift display right
 
-07
+Activate second line -3C
 
-Shift display left
+Display OFF, cursor OFF -08
 
-0E
+Jump to second line, position 1 -c1
 
-Display ON, cursor blinking
+Display ON, cursor OFF -OC
 
-80
+Jump to second line, position 1 -C1
 
-Force cursor to beginning of first line
-
-C0
-
-Force cursor to beginning of second line
-
-38
-
-2 lines and 5×7 matrix
-
-83
-
-Cursor line 1 position 3
-
-3C
-
-Activate second line
-
-08
-
-Display OFF, cursor OFF
-
-C1
-
-Jump to second line, position 1
-
-OC
-
-Display ON, cursor OFF
-
-C1
-
-Jump to second line, position 1
-
-C2
-
-Jump to second line, position 2
+Jump to second line, position 2 -C2
  
 ## Procedure:
  
 ## CIRCUIT DIAGRAM 
-![image](https://user-images.githubusercontent.com/36288975/233857974-bda6200e-4f88-4e7b-b189-4da80210fa23.png)
-
+<img src="https://user-images.githubusercontent.com/36288975/233857974-bda6200e-4f88-4e7b-b189-4da80210fa23.png" width=450 height=450>
+<br>
 
 ## STM 32 CUBE PROGRAM :
 ```
@@ -224,10 +188,10 @@ void assert_failed(uint8_t *file, uint32_t line)
 
 
 ## Output screen shots of proteus  :
- ![ppppppppp](https://github.com/BaskaranV15/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118703522/facf6930-dffe-4072-a5a4-7bc53f8a98da)
- 
- ## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
- ![269237539-c3b6e4ba-320e-4ccf-bb7a-8f83ba7712a5](https://github.com/BaskaranV15/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118703522/a3a19bb6-5423-45ee-ab99-994eed12ad11)
+<img src="https://github.com/BaskaranV15/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118703522/facf6930-dffe-4072-a5a4-7bc53f8a98da" width=450 height=450>
+
+## CIRCUIT DIAGRAM (EXPORT THE GRAPHICS TO PDF AND ADD THE SCREEN SHOT HERE): 
+ <img src="https://github.com/BaskaranV15/EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM-/assets/118703522/a3a19bb6-5423-45ee-ab99-994eed12ad11" width=450 height=450>
 
  
 ## Result :
