@@ -1,6 +1,4 @@
 # EXPERIMENT--04-INTERFACING-AN16X2-LCD-DISPLAY-WITH-ARM AND DISPLAY STRING
-
-
  ## Aim: 
  To Interface a 16X2 LCD display to ARM controller  , and simulate it in Proteus 
 ## Components required: 
@@ -58,7 +56,7 @@ The LCD can work in two different modes, namely the 4-bit mode and the 8-bit mod
 Whereas in 8 bit mode we can send the 8-bit data directly in one stroke since we use all the 8 data lines.
 
  8-bit mode is faster and flawless than 4-bit mode. But the major drawback is that it needs 8 data lines connected to the microcontroller. This will make us run out of I/O pins on our MCU, so 4-bit mode is widely used. No control pins are used to set these modes. 
- ## Procedure:
+ ### STEPS:
  LCD Commands:
 
 There are some preset commands instructions in LCD, which we need to send to LCD through some microcontroller. Some important command instructions are given below:
@@ -101,8 +99,6 @@ Display ON, cursor OFF -OC
 Jump to second line, position 1 -C1
 
 Jump to second line, position 2 -C2
-
- 
 
 ## DEVELOPED BY:BASKARAN V
 ## REF NO:212222230020
